@@ -1,4 +1,5 @@
 # Private-Chat
+This is a basic implementation on how chat apps like slack and messenger for web works and it was built using node and socket.io
 
 ##SCREENSHOTS
 ![Home](https://github.com/TheDhejavu/Private-Chat/blob/master/screenshots/Screenshot_2019-03-30%20Applet-(1).png)
