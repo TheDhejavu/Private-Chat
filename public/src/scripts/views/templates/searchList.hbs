@@ -1,0 +1,11 @@
+{{#each users}}
+<li class="dropdown-frds-list">
+   <a href="#" class="flex" onclick="find.onclickList('{{_id}}', '{{nickname}}')" value="{{users}}">
+        <img src="/dist/files/{{image}}">
+        <div class="dropdown-frds-content">
+            <h5>{{nick nickname}}</h5>
+            <p>@ {{nickname}}</p>
+        </div>
+   </a>
+</li>
+{{/each}}

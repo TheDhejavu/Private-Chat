@@ -1,0 +1,27 @@
+  <div class="danger__msg alert-msg js-logout-danger"></div>
+  <section class="flex big-wrapper">
+
+   {{> sideNav}}
+   <div class="logged-out__dialog js-logged-out__dialog">
+              <div class="logged-out__dialog__panel">
+                 <h4> You are currently logged out</h4>
+                 <a href="/login" class="relogin-button">Click Me!! to login again</a>
+              </div>
+           </div>
+   <section class="chat-interface__container">
+      <div class="chat-interface__top">
+        <h3 class="js-nickname"></h3>
+      </div>
+      <div class="chat-interface-panel js-chat-interface-panel">
+      </div>
+      <div class="chat-interface__bottom">
+        <form action="/chat" class="flex" method="post">
+          <input type="text" placeholder="Type your messsage here.." name="message" class="js-message" autocomplete="off">
+          <button type="submit" class="js-send-button"><i class="ion-android-send"></i></button>
+        </form>
+      </div>
+   </section>
+ </section>
+ <script type="text/javascript" src="/src/scripts/libs/moment.min.js"></script>
+ <script type="text/javascript" src="/src/scripts/libs/socket.io.js"></script>
+<script type="text/javascript" src="/dist/scripts/home-bundle.js"></script>

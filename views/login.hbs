@@ -1,0 +1,20 @@
+<section class="auth">
+   <section class="clearfix">
+      <h1 class="heading">Login</h1>
+      <p class="sub-heading">Login to start chatting</p>
+      <div class="form-container">
+        <div class="alert-container">
+
+        </div>
+       <form action="/login" method="post"class="js-form" enctype="application/x-www-form-urlencoded">
+          <input type="text" class="field field-bg" placeholder="Nickname" name="nickname">
+          <input type="password" class="field field-bg" placeholder="Enter your password" name="password">
+          <input type="submit" class="submit-btn js-submit-btn" value="login">
+        </form>
+        <a class="bottom-link" href="/register">Dont have an account? register</a>
+      </div>
+
+   </section>
+</section>
+<script type="text/javascript" src="/dist/scripts/login-bundle.js"></script>
+<script type="text/javascript" src="/src/scripts/libs/socket.io.js"></script>

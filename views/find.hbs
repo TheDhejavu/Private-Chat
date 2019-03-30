@@ -1,0 +1,40 @@
+<div class="danger__msg alert-msg js-logout-danger"></div>
+<section class="flex big-wrapper">
+    {{> sideNav}}
+   <div class="logged-out__dialog js-logged-out__dialog">
+              <div class="logged-out__dialog__panel">
+                 <h4> You are currently logged out</h4>
+                 <a href="/login" class="relogin-button">Click Me!! to login again</a>
+              </div>
+           </div>
+   <section class="chat-interface__container">
+      <div class="chat-interface__top">
+
+          <form action="/find" method="get"  enctype="application/x-www-form-urlencoded">
+            <div class="find-list-wrapper js-find-list-wrapper">
+
+            </div>
+            <input type="text" placeholder="Search for friends" class="js-search" name="nick" autocomplete="off">
+            <input type="submit" value="find" hidden>
+         </form>
+          <div class="drop-down js-search-drop-down">
+            <ul class="js-search-lists">
+
+            </ul>
+          </div>
+      </div>
+      <div class="chat-interface-panel js-chat-interface-panel">
+
+      </div>
+      <div class="chat-interface__bottom">
+        <form action="#" class="flex">
+          <input type="text" placeholder="Type your messsage here.." class="js-message">
+          <button type="submit" class="js-send-to-many-button" ><i class="ion-android-send"></i></button>
+        </form>
+      </div>
+
+   </section>
+ </section>
+ <script type="text/javascript" src="/src/scripts/libs/moment.min.js"></script>
+ <script type="text/javascript" src="/src/scripts/libs/socket.io.js"></script>
+<script type="text/javascript" src="/dist/scripts/find-bundle.js"></script>
